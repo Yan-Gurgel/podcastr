@@ -1,17 +1,15 @@
-
-type itens() {
+type User = {
     name: String;
-    local: {
-        cidade:String;
-
+    anddress: {
+        city: String;
+        state: String;
     }
-};
-
-
-
-export function Tipagem(){
-    return (
-
-
-    );
 }
+
+function create (user: User){
+    return `Olá, ${user.name}, Cidade ${user.anddress.city} - ${user.anddress.state}`
+}
+
+const welcome = creatWelcome({
+    
+})
